@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <th>Account Number</th>
+        <th>Customer Number</th>
+        <th>Branch ID</th>
+        <th>Balance</th>
+        <th>Opening date</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customers">
+            <td>{{ customer.accountno }}</td>
+            <td>{{ customer.customerno }}</td>
+            <td>{{ customer.branchId }}</td>
+            <td>{{ customer.balance }}</td>
+            <td>{{ customer.openingdate }}</td>
+            <td><button (click)="deleteCustomer(customer)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

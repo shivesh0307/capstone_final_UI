@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <th>Branch Id</th>
+        <th>Branch Name</th>
+        <th>Branch Address</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let branch of branches">
+            <td>{{ branch.branchId }}</td>
+            <td>{{ branch.branchName }}</td>
+            <td>{{ branch.branchAddress }}</td>
+            <td><button (click)="deleteBranch(branch)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
